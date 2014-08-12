@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		223B90B0199729500039ABF5 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 223B90AF199729500039ABF5 /* Cocoa.framework */; };
-		223B90BA199729500039ABF5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 223B90B8199729500039ABF5 /* InfoPlist.strings */; };
 		223B90BC199729500039ABF5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 223B90BB199729500039ABF5 /* main.m */; };
 		223B90C0199729500039ABF5 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 223B90BE199729500039ABF5 /* Credits.rtf */; };
 		223B90C3199729500039ABF5 /* DX_AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 223B90C2199729500039ABF5 /* DX_AppDelegate.m */; };
@@ -18,6 +17,7 @@
 		223B90D0199729510039ABF5 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 223B90AF199729500039ABF5 /* Cocoa.framework */; };
 		223B90D8199729510039ABF5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 223B90D6199729510039ABF5 /* InfoPlist.strings */; };
 		223B90DA199729510039ABF5 /* Haz_Esto_Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 223B90D9199729510039ABF5 /* Haz_Esto_Tests.m */; };
+		227456E019982A99008299E1 /* backup.icns in Resources */ = {isa = PBXBuildFile; fileRef = 227456DF19982A99008299E1 /* backup.icns */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +37,6 @@
 		223B90B3199729500039ABF5 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		223B90B4199729500039ABF5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		223B90B7199729500039ABF5 /* Haz Esto!-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Haz Esto!-Info.plist"; sourceTree = "<group>"; };
-		223B90B9199729500039ABF5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		223B90BB199729500039ABF5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		223B90BD199729500039ABF5 /* Haz Esto!-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Haz Esto!-Prefix.pch"; sourceTree = "<group>"; };
 		223B90BF199729500039ABF5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
@@ -50,6 +49,7 @@
 		223B90D5199729510039ABF5 /* Haz Esto!Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Haz Esto!Tests-Info.plist"; sourceTree = "<group>"; };
 		223B90D7199729510039ABF5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		223B90D9199729510039ABF5 /* Haz_Esto_Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Haz_Esto_Tests.m; sourceTree = "<group>"; };
+		227456DF19982A99008299E1 /* backup.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; name = backup.icns; path = ../../../Downloads/backup.icns; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,7 +128,7 @@
 			isa = PBXGroup;
 			children = (
 				223B90B7199729500039ABF5 /* Haz Esto!-Info.plist */,
-				223B90B8199729500039ABF5 /* InfoPlist.strings */,
+				227456DF19982A99008299E1 /* backup.icns */,
 				223B90BB199729500039ABF5 /* main.m */,
 				223B90BD199729500039ABF5 /* Haz Esto!-Prefix.pch */,
 				223B90BE199729500039ABF5 /* Credits.rtf */,
@@ -231,7 +231,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				223B90BA199729500039ABF5 /* InfoPlist.strings in Resources */,
+				227456E019982A99008299E1 /* backup.icns in Resources */,
 				223B90C8199729510039ABF5 /* Images.xcassets in Resources */,
 				223B90C0199729500039ABF5 /* Credits.rtf in Resources */,
 				223B90C6199729510039ABF5 /* MainMenu.xib in Resources */,
@@ -277,14 +277,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		223B90B8199729500039ABF5 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				223B90B9199729500039ABF5 /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
 		223B90BE199729500039ABF5 /* Credits.rtf */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -390,7 +382,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Haz Esto!/Haz Esto!-Prefix.pch";
 				INFOPLIST_FILE = "Haz Esto!/Haz Esto!-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx10.9;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -403,7 +397,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Haz Esto!/Haz Esto!-Prefix.pch";
 				INFOPLIST_FILE = "Haz Esto!/Haz Esto!-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx10.9;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -467,6 +463,7 @@
 				223B90DF199729510039ABF5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		223B90E0199729510039ABF5 /* Build configuration list for PBXNativeTarget "Haz Esto!Tests" */ = {
 			isa = XCConfigurationList;
@@ -475,6 +472,7 @@
 				223B90E2199729510039ABF5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
